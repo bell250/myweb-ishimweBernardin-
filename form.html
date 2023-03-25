@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="images/icon.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>designred form</title>
+  <style type="text/css">
+   .main{
+                height: auto;
+                display: block;
+                text-align:center;
+                width: 400px;
+                margin: auto auto;
+                margin-top: 60px;
+                border-radius:12px;
+                box-shadow:0 0 10px #333;
+                border:3px solid white;
+                background-color: white;
+                opacity: 90;
+            }
+
+            form {
+                background:fff;
+                padding-top:0px;
+                padding-bottom:50px;
+                padding-left:50px;
+                padding-right:50px;
+            }
+
+            form p {
+                margin:0;
+                text-align:left;
+            }
+            h2{
+                color: blue;
+                font-weight: bold;
+                font-family:Arial Black; 
+            }
+
+            label {
+                display:inline-block;
+                color:#5e5e5e;
+                font-size:15px;
+                font-weight:bold;
+                text-decoration:none;
+                text-shadow:1px 1px 0px #fff;
+            }
+
+            input[type="text"], input[type="password"],input[type="email"] ,input[type="number"],textarea,select, input[type="file"]{
+                border-color:#ecf3fb;
+                border-right:1px solid #CCCCCC;
+                border-style:solid;
+                border-width:1px;
+                font-size:15px;
+                margin:0 0 15px;
+                padding:5px;
+                width:200px;
+            }
+
+           input[type="text"]:focus,input[type="email"]:focus ,input[type="number"]:focus,select:focus
+            {
+                outline: none;
+                border: 1px solid #AF6527;
+                width: 16em;
+            }
+            input[type="submit"], input[type="button"], #a,input[type="reset"]
+            {
+                
+                background-color:#ededed;
+                -moz-border-radius:7px;
+                -webkit-border-radius:7px;
+                border-radius:7px;
+                border:1px solid #c4c4c4;
+                display:inline-block;
+                color:#5e5e5e;
+                font-size:15px;
+                font-weight:bold;
+                padding:6px 20px;
+                text-decoration:none;
+                text-shadow:1px 1px 0px #ffffff;
+            }
+            input[type="submit"]:hover, input[type="reset"]:hover{
+                background-color: black;
+                color: white;
+            }
+  </style>
+</head>
+<body>
+    <div class="main">
+                <div style="margin-top: 20px; color:red;"> we offer training in Software development if you are interested fill the following form</div>
+               <form action="index.html" onsubmit="alert('your appllication sent')";>     
+                <p><h2><u>Application form</u></h2></p>
+                <p><label>Names:</label><br><input type="text" required class="bell" style="background-color:white;color: black;" /></p>
+                <p><label>Email:</label><br><input type="email" required style="background-color:white;color: black; /></p>
+                <p><label>National id:</label><br><input type="number" required/></p>
+                <p><label class="form-label">Level of Education </label></p>
+                <select name="Level_of_education">
+                    <option value="">-- select your level of education--</option>
+                    <option value="oLevel">Olevel</option>
+                    <option value="A2">Alevel</option>
+                    <option value="A1">Advanced diploma</option>
+                    <option value="A0">Bachelor</option>
+                </select>
+                <p><label class="form-label">Id/Passport: </label> 
+               <input type="file" name="id_image" class="form-control"> </p> 
+            <p><label class="form-label">degree: </label> <input type="file" name="degree[]" class="form-control"></p>
+            <p><label class="form-label">photo: </label>   <input type="file" name="file" class="form-control"></p>
+                
+                <p><input type="submit" name="submit"/> <input type="reset" name="submit"/>  </p>
+                <br>
+                
+            </form>
+        </div>
+</body></html>

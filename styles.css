@@ -1,0 +1,111 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: lightgrey;
+	
+}
+.header{
+	margin: 0px;
+	background: cyan;
+	font-weight: bold;
+	text-align: center;	
+	padding: 5px;
+  vertical-align: middle;
+}
+#nav_ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: violet;
+}
+
+#nav_ul>li {
+  float: left;
+}
+
+#nav_ul>li a {
+  display:block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.aside>ul{
+ list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background: green;
+  opacity: 0.5 ;
+  width: 18%;
+  display: inline-block;
+}
+.aside>ul>li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px; 10px;
+}
+.fprofile{
+	height:200px;
+	width: 57%;
+	background-color: lightcyan;
+	display: inline-block;
+	position: relative;
+	left: 21%;
+	top: -100px;
+}
+.profile{
+	width: 150px;
+	border-radius:100px;
+    float: left;
+    padding: 10px;
+}
+.about{
+	padding: 5px;
+	width: 57%;
+	background-color: lightcyan;
+	text-align: justify;
+	position: relative;
+	left: 21%;
+	top: -80px;
+}
+.content{
+	background-color: white;
+}
+.lis{
+	width: 57%;
+	background-color: lightcyan;
+	position: relative;
+	left: 21%;
+	top: -50px;
+	font-weight: bold;
+}
+.lis>.fst{
+	list-style-type: upper-alpha;
+	width: 47%;
+	display: inline-block;
+	background-color: lightblue;
+	color: black;
+	margin-left: 10px;
+
+}
+.lis>.scd{
+	list-style-type: upper-roman;
+	width: 47%;
+	display: inline-block;
+	background-color: teal;
+	color: white;
+	margin-left: 10px;
+	
+}
+footer{
+	background-color: dimgrey;
+	text-align: center;
+	padding: 10px;
+	color: white;
+	position: relative;
+	top: 20px;
+}
